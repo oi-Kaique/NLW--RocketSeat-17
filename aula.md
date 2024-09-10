@@ -18,18 +18,51 @@
 
  # FASSES DA RESOLUÇÃO DE UM PROBLEMA 
  
-  [x]COLETAR OS DADOS
-  [x]PROCESSAR OS DADOS (MANIPULAR, ALERAR....)
-  [x]APRESENTAR OS DADOS
+ - [x]COLETAR OS DADOS
+ - [x]PROCESSAR OS DADOS (MANIPULAR, ALERAR....)
+ - [x]APRESENTAR OS DADOS
 
   ## TIPOS DE DADOS:
-   String(Textos)"" '' ´´
-   Number(NUMEROS(1,2,3,4,5))
-   Function
+   - [x] String: (Textos)"" '' ´´
+   - [x] Number: (NUMEROS(1,2,3,4,5))
+   - [x] Function
+   - [x] Boolean: true , false
 
    ## ESCOPOS E VARIÁVEIS
-   Variáveis globais e locais 
+  - Variáveis globais e locais 
    constantes
 
    ## OPERADORES
- Operadores de atribuição de valor
+  - [x] Operadores de atribuição de valor =
+  - [x] Operador de contatenação (junção de Strings-) +
+
+ ## ESTRUTURAS DE DADOS
+  
+#### ARRAYS
+- [x] Uma lista que contém qualquer tipo de dado
+
+### OBJETIVOS
+- [x] Atributos e métodos
+- [x] Criação e manipulação de obejtos
+- [] Acesso a propriedades de objetoas
+
+
+
+### FUNCTIONS
+- [x] Criar, passar argumento
+- [x] Executar
+- [x] arrow function / named function
+
+ //arrow function
+ const criarMeta = () => {}
+
+ //function
+ function mensagem () {}
+
+
+##### AULA
+ // Hellor world
+ //{} ESCOPO
+ let mensage = "Hello World"
+ console.log(mensage) //(ISSO È UMA FUNÇÂO)
+
