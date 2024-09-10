@@ -8,16 +8,28 @@
 
 ## PEÇAS DE UMA LINGUAGEM
 
-  - Comentários
-  - Declaração de variáveis (const, let)
-  - Operadores (atribuiçãom matemáticos, lógicos)
-  - Tipos de dados (string, number, boolean)
-  - Estrutura de dados (functions, object, arry)
-  - Controle de fluxo (if/else)
-  - Estrutura de repetição (for, while)
+  - [x]Comentários
+  - []Declaração de variáveis (const, let)
+  - []Operadores (atribuiçãom matemáticos, lógicos)
+  - []Tipos de dados (string, number, boolean)
+  - []Estrutura de dados (functions, object, arry)
+  - []Controle de fluxo (if/else)
+  - []Estrutura de repetição (for, while)
 
  # FASSES DA RESOLUÇÃO DE UM PROBLEMA 
  
-  COLETAR OS DADOS
-  PROCESSAR OS DADOS (MANIPULAR, ALERAR....)
-  APRESENTAR OS DADOS
+  [x]COLETAR OS DADOS
+  [x]PROCESSAR OS DADOS (MANIPULAR, ALERAR....)
+  [x]APRESENTAR OS DADOS
+
+  ## TIPOS DE DADOS:
+   String(Textos)"" '' ´´
+   Number(NUMEROS(1,2,3,4,5))
+   Function
+
+   ## ESCOPOS E VARIÁVEIS
+   Variáveis globais e locais 
+   constantes
+
+   ## OPERADORES
+ Operadores de atribuição de valor
