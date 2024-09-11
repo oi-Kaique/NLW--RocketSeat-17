@@ -36,11 +36,15 @@
   - [x] Operadores de atribuição de valor =
   - [x] Operador de contatenação (junção de Strings-) +
   - [x] Operadores de comparação: igual == diferente!=  menor < maior > menor igual<= maior igual=>
+  - [x] Spread operator
 
  ## ESTRUTURAS DE DADOS
   
 #### ARRAYS
 - [x] Uma lista que contém qualquer tipo de dado
+- [x] Métodos de array: push , [find , forEach , Filter ] : HOF (HIGHER ORDER FUCTIONS)
+
+ método é toda função que esta dentro de um OBJETO
 
 ### OBJETIVOS
 - [x] Atributos e métodos
