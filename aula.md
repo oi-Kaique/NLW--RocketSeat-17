@@ -3,18 +3,18 @@
    Maneira de dar instrução ao computador
    como um lego você irá utilizar peças para criar algoritimos, ou seja, para resolver problemas.
 
-        **ALGORITIMOS** Sequência de passos lógicos e finita para resolução de um problema.
+        **ALGORITIMOS**: Sequência de passos lógicos e finita para resolução de um problema.
 
 
 ## PEÇAS DE UMA LINGUAGEM
 
-  - [x]Comentários
-  - []Declaração de variáveis (const, let)
-  - []Operadores (atribuiçãom matemáticos, lógicos)
-  - []Tipos de dados (string, number, boolean)
-  - []Estrutura de dados (functions, object, arry)
-  - []Controle de fluxo (if/else)
-  - []Estrutura de repetição (for, while)
+  - [x] Comentários
+  - [x] Declaração de variáveis (const, let)
+  - [x] Operadores (atribuiçãom matemáticos, lógicos)
+  - [x] Tipos de dados (string, number, boolean)
+  - [x] Estrutura de dados (functions, object, arry)
+  - [x] Controle de fluxo (if/else)
+  - [x] Estrutura de repetição (for, while)
 
  # FASSES DA RESOLUÇÃO DE UM PROBLEMA 
  
@@ -35,6 +35,7 @@
    ## OPERADORES
   - [x] Operadores de atribuição de valor =
   - [x] Operador de contatenação (junção de Strings-) +
+  - [x] Operadores de comparação: igual == diferente!=  menor < maior > menor igual<= maior igual=>
 
  ## ESTRUTURAS DE DADOS
   
@@ -63,9 +64,9 @@
 # ESTRUTURA DE REPETIÇÃO
 [x] while
 
-# CONDICIONAIS
+# CONDICIONAIS (CONTROLE DE FLUXO)
 [x] switch
-
+[x] if/else
 
 # MÓDULOS EM NODE.JS
  - Importação de módulos (require,connonJS)
