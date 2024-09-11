@@ -35,7 +35,7 @@
    ## OPERADORES
   - [x] Operadores de atribuição de valor =
   - [x] Operador de contatenação (junção de Strings-) +
-  - [x] Operadores de comparação: igual == diferente!=  menor < maior > menor igual<= maior igual=>
+  - [x] Operadores de comparação: igual == diferente !=  menor < maior > menor igual<= maior igual=>
   - [x] Spread operator
 
  ## ESTRUTURAS DE DADOS
