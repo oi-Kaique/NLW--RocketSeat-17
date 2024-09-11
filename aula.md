@@ -60,9 +60,87 @@
  function mensagem () {}
 
 
+# ESTRUTURA DE REPETIÇÃO
+[x] while
+
+# CONDICIONAIS
+[x] switch
+
+
+# MÓDULOS EM NODE.JS
+ - Importação de módulos (require,connonJS)
+ - Biblioteca 'inquirer' para criar prompts interativos
+
+## PROGRAMAÇÃO ASSÍNCRUONA E PROMISES
+- [x] Uso de funções e assíncronas (async/await)
+
 ##### AULA
  // Hellor world
  //{} ESCOPO
  let mensage = "Hello World"
  console.log(mensage) //(ISSO È UMA FUNÇÂO)
 
+let metas = ["Kaique", "alo"]
+
+console.log (metas[1] + ", " + metas[0]) // por que o ALO VEIO PRIMEIRO QUE KAIQUE??
+
+
+// arrays, objetos
+
+let meta = {
+    value: 'ler um livro por mês',
+    //address:2,
+    checked: false,
+   // isChecked: (info) => {
+     //   console.log(info)
+   // }
+}
+
+let metas = [
+    meta,{
+        value: "camiar 20 minutos todos os dias",
+        checked:false
+    }
+]
+
+console.log(metas[0] .value)
+
+//fuction //arrow fuction
+//const criarMeta = () => {}
+
+
+const start = () => {
+    // vamos ter aqui dentro o MENU da aplicação
+    let count = 1
+
+    while(count < 10) { //<= menor igual
+        console.log(count)
+        count = count + 1 //count ++
+    }
+}
+
+start()
+
+const start = () => {
+    // vamos ter aqui dentro o MENU da aplicação
+    while(true){
+        
+        let opcao = "Sair"
+        // Controle de Fluxo
+        switch (opcao) {
+            case "Cadastrar":
+                console.log("Vamos cadastrar")
+                break;
+        
+            case "listar":
+                console.log ("Vamos listar")
+                break;
+            
+            case "Sair":
+                return
+                
+        }
+    }
+}
+
+start()
