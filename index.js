@@ -29,16 +29,16 @@ const listarMetas = async () => {
         choices:[...metas],
         instructions: false,
     })
+    
+    // Para que possa desmarcar a tarefa que não fez
+    metas.forEach((m) => {
+        m.checked = false
+    })
 
     if (respostas.length == 0){
         console.log ("Nenhuma meta selecionada!")
         return
     }
-
-    // Para que possa desmarcar a tarefa que não fez
-    metas.forEach((m) => {
-        m.checked = false
-    })
 
     // Para que possa marca a e confirmar as metas que fez 
     respostas.forEach((resposta) => {
