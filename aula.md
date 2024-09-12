@@ -42,7 +42,7 @@
   
 #### ARRAYS
 - [x] Uma lista que contém qualquer tipo de dado
-- [x] Métodos de array: push , [find , forEach , Filter ] : HOF (HIGHER ORDER FUCTIONS)
+- [x] Métodos de array: push , [find , forEach , Filter ,map  ] : HOF (HIGHER ORDER FUCTIONS)
 
  método é toda função que esta dentro de um OBJETO
 
