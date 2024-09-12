@@ -1,14 +1,23 @@
 const { select, input, checkbox } = require('@inquirer/prompts')
 
+const fs = require ("fs").promises
+
 let mensagem = "Bem Vindo ao APP de Metas :)";
 
-//Cadastramento de metas
-let meta = {
-    value: 'Tomar 3l de água por dia',
-    checked:false,
+let metas 
+
+const carregarMetas = async () => {
+    try{
+        const dados = await fs.readFile("metas.json", "utf-8")
+        metas = JSON.parse(dados)
+    }catch(erro){
+        metas = []
+    }
 }
 
-let metas = [ meta ]
+const salvarMetas = async () => {
+    await fs.writeFile("metas.json", JSON.stringify(metas, null, 2))
+}
 
 const cadastrarMeta = async () => {
     const meta = await input ({ message: "Digite a meta:"})
@@ -27,7 +36,11 @@ const cadastrarMeta = async () => {
 
 // Listas da metas
 const listarMetas = async () => {
-    
+    if(metas.length == 0){
+        mensagem = "Não Existe Metas!"
+        return
+    }
+
     const respostas = await checkbox ({
         message: "Use as setas para mudar de meta, o espaço para marcar ou desmarcar e o Enter para Finalizar a etapa",
         choices:[...metas],
@@ -59,6 +72,11 @@ const listarMetas = async () => {
 
 //Aprezentando metas realizadas
 const metasRealizadas = async () => {
+    if(metas.length == 0){
+        mensagem = "Não Existe Metas!"
+        return
+    }
+
     const realizadas = metas.filter((meta) => {
         return meta.checked
     })
@@ -75,6 +93,11 @@ const metasRealizadas = async () => {
 }
 
 const metasAbertas = async() => {
+    if(metas.length == 0){
+        mensagem = "Não Existe Metas!"
+        return
+    }
+
     const abertas = metas.filter((meta) =>{
         return meta.checked != true
     })
@@ -91,6 +114,11 @@ const metasAbertas = async() => {
 }
 
 const deletarMetas = async () => {
+    if(metas.length == 0){
+        mensagem = "Não Existe Metas!"
+        return
+    }
+
     const metasDesmarcadas = metas.map ((meta) => {
         return {value: meta.value, checked:false}
     })
@@ -127,9 +155,13 @@ const mostrarMensagem = () => {
 }
 
 const start = async () => {
+    
+   await carregarMetas()
+    
     // Vamos ter aqui dentro o MENU da aplicação
     while(true){
         mostrarMensagem()
+        await salvarMetas()
 
         const opcao = await select({
             message: "Menu >",

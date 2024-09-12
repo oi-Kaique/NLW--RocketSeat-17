@@ -75,7 +75,13 @@
 # MÓDULOS EM NODE.JS
  - Importação de módulos (require,connonJS)
  - Biblioteca 'inquirer' para criar prompts interativos
+ - FS (file system)
 
+ ## JSON
+  - [x] JavaScript Object Notation (.Json)
+  - [x] JSON.parse(): Transforma de JSON para JS
+  - [x] JSON.stringify(): Trasforma de JS para JSON
+  
 ## PROGRAMAÇÃO ASSÍNCRUONA E PROMISES
 - [x] Uso de funções e assíncronas (async/await)
 
