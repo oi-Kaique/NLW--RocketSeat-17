@@ -86,6 +86,31 @@ const metasAbertas = async() => {
     })
 }
 
+const deletarMetas = async () => {
+    const metasDesmarcadas = metas.map ((meta) => {
+        return {value: meta.value, checked:false}
+    })
+
+    const itemsADeletar = await checkbox ({
+        message: "Selecione item para DELETAR",
+        choices:[...metasDesmarcadas],
+        instructions: false,
+    })
+
+   if(itemsADeletar.length == 0){
+    console.log ("Nenhum item para Deletar")
+    return
+   }
+
+   itemsADeletar.forEach((item) => {
+    metas = metas.filter((meta) => {
+        return meta.value != item
+    })
+   })
+    
+   console.log ("Meta(s) deleta(s) com sucesso!")
+}
+
 const start = async () => {
     // Vamos ter aqui dentro o MENU da aplicação
     while(true){
@@ -108,6 +133,10 @@ const start = async () => {
                 {
                     name: "Metas abertas",
                     value: "abertas"
+                },
+                {
+                    name: "Deletar metas",
+                    value: "deletar"
                 },
                 {
                     name: "Sair",
@@ -134,6 +163,10 @@ const start = async () => {
             
             case "abertas":
                 await metasAbertas()
+                break
+
+            case "deletar":
+                await deletarMetas()
                 break
 
             case "sair":
